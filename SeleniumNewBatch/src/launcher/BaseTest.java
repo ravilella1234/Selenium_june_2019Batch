@@ -6,8 +6,12 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class BaseTest 
@@ -34,7 +38,26 @@ public class BaseTest
 		}
 		else if(p.getProperty(browser).equalsIgnoreCase("firefox")) 
 		{
-			driver=new FirefoxDriver();
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "d://abcd.txt");
+			
+			
+			FirefoxOptions option=new FirefoxOptions();
+			option.setBinary("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
+			
+			
+			ProfilesIni p=new ProfilesIni();
+			FirefoxProfile profile = p.getProfile("morningprofile1");
+			
+			
+			//notifications
+			profile.setPreference("dom.webnotifications.enabled", false);
+			
+			option.setProfile(profile);
+			
+			
+			
+			driver=new FirefoxDriver(option);
+			
 		}
 		else if(p.getProperty(browser).equalsIgnoreCase("ie")) 
 		{

@@ -7,9 +7,9 @@ public class TC_002 extends BaseTest
 	{
 		loadData();
 		
-		launch("iebrowser");
+		launch("firefoxbrowser");
 		
-		navigateUrl("amazonurl");
+		navigateUrl("iciciurl");
 
 	}
 
