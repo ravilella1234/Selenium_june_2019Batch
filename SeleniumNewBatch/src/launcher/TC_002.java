@@ -7,7 +7,7 @@ public class TC_002 extends BaseTest
 	{
 		loadData();
 		
-		launch("firefoxbrowser");
+		launch("chromebrowser");
 		
 		navigateUrl("iciciurl");
 
