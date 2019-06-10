@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.Properties;
 
 import org.openqa.selenium.PageLoadStrategy;
+import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
@@ -17,6 +18,9 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerDriverService;
+import org.openqa.selenium.ie.InternetExplorerOptions;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class BaseTest 
 {
@@ -56,6 +60,8 @@ public class BaseTest
 			option.addArguments("--disable-infobars");
 			option.addArguments("--start-maximized");
 			
+			option.addArguments("--proxy-server=http://192.168.90.84:1234");
+			
 			
 			driver=new ChromeDriver(option);
 		}
@@ -75,9 +81,14 @@ public class BaseTest
 			//notifications
 			profile.setPreference("dom.webnotifications.enabled", false);
 			
+			//proxy servers
+			profile.setPreference("network.proxy.type", 1);
+			profile.setPreference("network.proxy.socks", "192.168.90.54");
+			profile.setPreference("network.proxy.socks_port", 1744);
+			
 			option.setProfile(profile);
 			
-	
+			
 			driver=new FirefoxDriver(option);
 			
 		}
@@ -86,13 +97,26 @@ public class BaseTest
 			//logs
 			System.setProperty(InternetExplorerDriverService.IE_DRIVER_LOGFILE_PROPERTY, "D:\\IE.log");
 			
-			driver=new InternetExplorerDriver();
+			InternetExplorerOptions option=new InternetExplorerOptions();
+			
+			//proxy servers
+			DesiredCapabilities cap=new DesiredCapabilities();
+			
+			String proxy="80.200.90.81:4444";
+			Proxy p =new Proxy();
+			p.setAutodetect(false);
+			p.setProxyType(p.getProxyType());
+			p.setSocksProxy(proxy);
+			cap.setCapability(CapabilityType.PROXY, p);
+			option.merge(cap);
+			
+			driver=new InternetExplorerDriver(option);
 		}
 		else if(p.getProperty(browser).equalsIgnoreCase("edge")) 
 		{
 			//logs
 			System.setProperty(EdgeDriverService.EDGE_DRIVER_EXE_PROPERTY, "null");
-			
+				
 			driver=new EdgeDriver();
 		}
 		
