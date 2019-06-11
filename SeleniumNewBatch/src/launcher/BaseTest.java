@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
@@ -27,7 +28,9 @@ public class BaseTest
 	public static WebDriver driver;
 	//public static String configPath="./config.properties";
 	public static String configPath=System.getProperty("user.dir")+"//config.properties";
+	public static String orPath=System.getProperty("user.dir")+"//or.properties";
 	public static Properties p;
+	public static Properties or;
 	
 	
 	public static void loadData() throws Exception
@@ -35,6 +38,11 @@ public class BaseTest
 		FileInputStream fis=new FileInputStream(configPath);
 		p=new Properties();
 		p.load(fis);
+		
+		FileInputStream fis1=new FileInputStream(orPath);
+		or=new Properties();
+		or.load(fis1);
+		
 	}
 	
 	
@@ -60,7 +68,7 @@ public class BaseTest
 			option.addArguments("--disable-infobars");
 			option.addArguments("--start-maximized");
 			
-			option.addArguments("--proxy-server=http://192.168.90.84:1234");
+			//option.addArguments("--proxy-server=http://192.168.90.84:1234");
 			
 			
 			driver=new ChromeDriver(option);
@@ -126,4 +134,26 @@ public class BaseTest
 	{
 		driver.get(p.getProperty(url));
 	}
+	
+	
+	
+	public static void selectItem(String locatorKey, String item)
+	{
+		driver.findElement(By.id(or.getProperty(locatorKey))).sendKeys(or.getProperty(item));
+	}
+	
+	
+	public static void type(String locatorKey, String value)
+	{
+		driver.findElement(By.name(or.getProperty(locatorKey))).sendKeys(or.getProperty(value));
+	}
+	
+	
+	public static void click(String locatorKey) 
+	{
+		driver.findElement(By.xpath(or.getProperty(locatorKey))).click();
+		
+	}	
+	
+	
 }
