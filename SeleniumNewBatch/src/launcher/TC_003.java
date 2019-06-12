@@ -1,7 +1,10 @@
 package launcher;
 
+import org.apache.log4j.Logger;
+
 public class TC_003 extends BaseTest
 {
+	private static final Logger log=Logger.getLogger(TC_003.class.getName());
 
 	public static void main(String[] args) throws Exception 
 	{
@@ -9,23 +12,17 @@ public class TC_003 extends BaseTest
 		loadData();
 		
 		launch("chromebrowser");
+		log.info("Opened the Browser :- " +p.getProperty("chromebrowser"));
 		
 		navigateUrl("amazonurl");
+		log.info("Navigated to site :- " + p.getProperty("amazonurl"));
 		
 		selectItem("amazonsearchdropdown_id","amazonvalue");
 		
-		type("amazonsearchtextbox_name","amazontext");
+		type("amazonsearchtextbox_id","amazontext");
 		
 		click("amazonsearchbutton_xpath");
-				
-			
-		//driver.findElement(By.id("searchDropdownBox")).sendKeys("Books");
-		
-		//driver.findElement(By.id("twotabsearchtextbox")).sendKeys("harry potter");
-		
-		//driver.findElement(By.xpath("//div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']")).click();
-		
+						
 	}
-
 	
 }
