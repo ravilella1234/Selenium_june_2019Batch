@@ -1,2 +1,7 @@
 Opened the Browser :- chrome
 Navigated to site :- https://www.amazon.in
+Opened the Browser :- chrome
+Navigated to site :- https://www.amazon.in
+Selected the item :- Booksby using locator :- searchDropdownBox
+Entered the value :- harry potterby using locator :- twotabsearchtextbox
+Clicked on Amozon search Button by using the locator :- //div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']

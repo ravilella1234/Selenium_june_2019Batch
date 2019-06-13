@@ -24,16 +24,22 @@ import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 public class BaseTest 
 {
 	public static WebDriver driver;
-	//public static String configPath="./config.properties";
-	public static String configPath=System.getProperty("user.dir")+"//config.properties";
-	public static String orPath=System.getProperty("user.dir")+"//or.properties";
-	public static String logpath=System.getProperty("user.dir")+"//log4j.properties";
+	public static String projectPath=System.getProperty("user.dir");
+	public static String configPath=projectPath+"//config.properties";
+	public static String orPath=projectPath+"//or.properties";
+	public static String logpath=projectPath+"//log4j.properties";
 	public static Properties p;
 	public static Properties or;
 	
+	
+	public static ExtentReports report=ExtentManager.getInstance();
+	public static ExtentTest test;
 	
 	public static void loadData() throws Exception
 	{
