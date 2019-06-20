@@ -1,12 +1,17 @@
 package launcher;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Date;
 import java.util.Properties;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.Proxy;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,11 +26,13 @@ import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerDriverService;
 import org.openqa.selenium.ie.InternetExplorerOptions;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class BaseTest 
 {
@@ -189,6 +196,64 @@ public class BaseTest
 		}
 		return element;
 	
+	}
+	
+	
+	
+	//*************************** Verification Methods *************************************
+	
+	public static boolean verifyTitle(String expectedTitle)
+	{
+		String actualTitle = driver.getTitle();
+		
+		if(actualTitle.equals(or.getProperty(expectedTitle)))
+			return true;
+		else
+			return false;
+			
+	}
+	
+	
+	public static boolean verifyText(String locatorKey, String expectedText) 
+	{
+		String actualText = getElement(locatorKey).getText().trim();
+		
+		if(actualText.equals(or.getProperty(expectedText)))
+			return true;
+		else
+			return false;
+		
+	}
+	
+	
+	//*************************** Reporting Methods *************************************
+	
+	public static void reportPass(String msg) 
+	{
+		test.log(LogStatus.PASS, msg);		
+	}
+
+	public static void reportFail(String msg) 
+	{
+		test.log(LogStatus.FAIL, msg);
+		takeScreenShot();
+	}
+
+
+	public static void takeScreenShot() 
+	{
+		Date dt=new Date();
+		String screenshotFileName = dt.toString().replace(":", "_").replace(" ", "_")+".png";
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		try 
+		{
+			FileHandler.copy(scrFile, new File(projectPath+"//failure//"+screenshotFileName));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		//put screen shot file in extent reports
+		test.log(LogStatus.INFO, "Screenshot --> "+ test.addScreenCapture(projectPath+"//failure//"+screenshotFileName));
 	}
 
 	
