@@ -1,6 +1,6 @@
-[1561517343.164][INFO]: Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29})
-[1561517343.164][INFO]: Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1561517344.089][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] COMMAND InitSession {
+[1561606001.615][INFO]: Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29})
+[1561606001.615][INFO]: Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1561606002.098][INFO]: [de42d61c923a94db485ace59e9758902] COMMAND InitSession {
    "capabilities": {
       "firstMatch": [ {
          "browserName": "chrome",
@@ -20,9 +20,9 @@
       "pageLoadStrategy": "normal"
    }
 }
-[1561517344.167][INFO]: Populating Preferences file: {
+[1561606002.102][INFO]: Populating Preferences file: {
    "account_id_migration_state": 2,
-   "account_tracker_service_last_update": "13205472087287766",
+   "account_tracker_service_last_update": "13206078754926118",
    "autocomplete": {
       "retention_policy_last_version": 75
    },
@@ -48,35 +48,35 @@
    },
    "countryid_at_install": 18766,
    "data_reduction": {
-      "daily_original_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "5220309", "0", "0", "0", "17502049", "4065611", "3420203", "0", "0", "0", "0", "0", "13837721", "6386334" ],
+      "daily_original_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "5220309", "0", "0", "0", "17502049", "4065611", "3420203", "0", "0", "0", "0", "0", "13837721", "6386334", "0", "0", "0", "0", "0", "1366092" ],
       "daily_original_length_application": "0",
-      "daily_original_length_unknown": "6386334",
+      "daily_original_length_unknown": "1366092",
       "daily_original_length_via_data_reduction_proxy": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
       "daily_original_length_via_data_reduction_proxy_application": "0",
-      "daily_original_length_via_data_reduction_proxy_unknown": "5867516",
+      "daily_original_length_via_data_reduction_proxy_unknown": "1319018",
       "daily_original_length_via_data_reduction_proxy_video": "0",
       "daily_original_length_video": "0",
       "daily_original_length_with_data_reduction_proxy_enabled": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
       "daily_original_length_with_data_reduction_proxy_enabled_application": "0",
       "daily_original_length_with_data_reduction_proxy_enabled_unknown": "0",
       "daily_original_length_with_data_reduction_proxy_enabled_video": "0",
-      "daily_received_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "5220309", "0", "0", "0", "17502049", "4065611", "3420203", "0", "0", "0", "0", "0", "13837721", "6386334" ],
+      "daily_received_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "5220309", "0", "0", "0", "17502049", "4065611", "3420203", "0", "0", "0", "0", "0", "13837721", "6386334", "0", "0", "0", "0", "0", "1366092" ],
       "daily_received_length_application": "0",
       "daily_received_length_https_with_data_reduction_proxy_enabled": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
       "daily_received_length_long_bypass_with_data_reduction_proxy_enabled": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
       "daily_received_length_short_bypass_with_data_reduction_proxy_enabled": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
-      "daily_received_length_unknown": "6386334",
+      "daily_received_length_unknown": "1366092",
       "daily_received_length_unknown_with_data_reduction_proxy_enabled": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
       "daily_received_length_via_data_reduction_proxy": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
       "daily_received_length_via_data_reduction_proxy_application": "0",
-      "daily_received_length_via_data_reduction_proxy_unknown": "5867516",
+      "daily_received_length_via_data_reduction_proxy_unknown": "1319018",
       "daily_received_length_via_data_reduction_proxy_video": "0",
       "daily_received_length_video": "0",
       "daily_received_length_with_data_reduction_proxy_enabled": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
       "daily_received_length_with_data_reduction_proxy_enabled_application": "0",
       "daily_received_length_with_data_reduction_proxy_enabled_unknown": "0",
       "daily_received_length_with_data_reduction_proxy_enabled_video": "0",
-      "last_update_date": "13205442600000000",
+      "last_update_date": "13205961000000000",
       "last_week_services_downstream_background_kb": {
 
       },
@@ -84,39 +84,36 @@
          "112189210": 3,
          "18300705": 0,
          "35473769": 0,
-         "35565745": 25,
-         "41424546": 30,
+         "35565745": 12,
+         "41424546": 9,
          "47815025": 0,
-         "54845618": 3,
+         "54845618": 4,
          "61656965": 0,
          "65957842": 0,
          "67052219": 0,
-         "78917933": 1120,
-         "88863520": 0
+         "78917933": 520,
+         "88863520": 0,
+         "99279418": 1
       },
       "last_week_user_traffic_contenttype_downstream_kb": {
-         "0": 15673
+         "0": 7004
       },
       "network_properties": {
 
       },
-      "this_week_number": 2581,
+      "this_week_number": 2582,
       "this_week_services_downstream_background_kb": {
 
       },
       "this_week_services_downstream_foreground_kb": {
-         "18300705": 0,
          "35473769": 0,
-         "35565745": 11,
-         "41424546": 8,
-         "47815025": 0,
-         "54845618": 4,
-         "67052219": 0,
-         "78917933": 480,
-         "99279418": 1
+         "35565745": 3,
+         "41424546": 3,
+         "67052219": 2,
+         "78917933": 80
       },
       "this_week_user_traffic_contenttype_downstream_kb": {
-         "0": 5716
+         "0": 3251
       }
    },
    "default_apps_install_state": 3,
@@ -155,16 +152,16 @@
    },
    "google": {
       "services": {
-         "signin_scoped_device_id": "161116b1-af7c-41ef-8117-af9c8613809a"
+         "signin_scoped_device_id": "6a231068-7d9f-46f0-82b4-9c45834e004b"
       }
    },
-   "http_original_content_length": "50432227",
-   "http_received_content_length": "50432227",
+   "http_original_content_length": "51798319",
+   "http_received_content_length": "51798319",
    "invalidator": {
       "client_id": "NwEyxTxOWe2yPEV8/xZjHw=="
    },
    "language_model_counters": {
-      "en": 100
+      "en": 107
    },
    "media": {
       "device_id_salt": "9069F18C3773A49B77A77DC468FCF220",
@@ -242,7 +239,7 @@
             },
             "media_engagement": {
                "https://www.amazon.in:443,*": {
-                  "last_modified": "13205475341248542",
+                  "last_modified": "13205990961521222",
                   "setting": {
                      "audiblePlaybacks": 0,
                      "audioContextPlaybacks": 0,
@@ -252,7 +249,7 @@
                      "mediaElementPlaybacks": 0,
                      "mediaPlaybacks": 0,
                      "significantPlaybacks": 0,
-                     "visits": 56,
+                     "visits": 57,
                      "visitsWithMediaTag": 0
                   }
                },
@@ -337,27 +334,27 @@
             },
             "site_engagement": {
                "https://www.amazon.in:443,*": {
-                  "last_modified": "13205475038324849",
+                  "last_modified": "13206079258695226",
                   "setting": {
-                     "lastEngagementTime": 13205475038324824.0,
+                     "lastEngagementTime": 13206079258695206.0,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 15.0,
-                     "rawScore": 11.588116000133622
+                     "rawScore": 10.185295217585425
                   }
                },
                "https://www.bestbuy.com:443,*": {
-                  "last_modified": "13205472088736276",
+                  "last_modified": "13206078757175473",
                   "setting": {
-                     "lastEngagementTime": 13205315145117888.0,
+                     "lastEngagementTime": 13205861263614036.0,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 3.0,
                      "rawScore": 3.0
                   }
                },
                "https://www.icicibank.com:443,*": {
-                  "last_modified": "13205472088736351",
+                  "last_modified": "13206078757175544",
                   "setting": {
-                     "lastEngagementTime": 13205315911569284.0,
+                     "lastEngagementTime": 13205862030065432.0,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 15.0,
                      "rawScore": 15.0
@@ -386,16 +383,16 @@
          "pref_version": 1
       },
       "created_by_version": "75.0.3770.80",
-      "exit_type": "Normal",
+      "exit_type": "Crashed",
       "exited_cleanly": true,
       "icon_version": 6,
-      "last_engagement_time": "13205475038324825",
+      "last_engagement_time": "13206079258695206",
       "last_time_obsolete_http_credentials_removed": 1560220708.864078,
       "managed_user_id": "",
       "name": "june8profile",
       "observed_session_time": {
-         "incognito_window_in_product_help_observed_session_time_key": 838.0,
-         "new_tab_in_product_help_observed_session_time_key": 838.0
+         "incognito_window_in_product_help_observed_session_time_key": 846.0,
+         "new_tab_in_product_help_observed_session_time_key": 846.0
       }
    },
    "signin": {
@@ -419,7 +416,7 @@
       "migration_state": 10
    }
 }
-[1561517344.206][INFO]: Populating Local State file: {
+[1561606002.147][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -432,12 +429,12 @@
       "os_password_last_changed": "13205475077113814"
    },
    "policy": {
-      "last_statistics_update": "13205472087025725"
+      "last_statistics_update": "13206078754688220"
    },
    "profile": {
       "info_cache": {
          "Default": {
-            "active_time": 1560998487.260184,
+            "active_time": 1561605154.907407,
             "avatar_icon": "chrome://theme/IDR_PROFILE_AVATAR_28",
             "background_apps": false,
             "gaia_id": "",
@@ -451,16 +448,16 @@
             "user_name": ""
          }
       },
-      "last_active_profiles": [  ]
+      "last_active_profiles": [ "Default" ]
    },
    "rappor": {
       "cohort_seed": 100,
       "secret": "Z9GQjMbOKLOJp8YUAj/LE/9GDzcTGFNhkASy/Wnawoi0LiwFY5OFZEglgZwLpFnZ"
    },
    "shutdown": {
-      "num_processes": 5,
-      "num_processes_slow": 1,
-      "type": 1
+      "num_processes": 0,
+      "num_processes_slow": 0,
+      "type": 0
    },
    "ssl": {
       "rev_checking": {
@@ -468,9 +465,9 @@
       }
    },
    "startup_metric": {
-      "last_startup_timestamp": "13205475035798176",
+      "last_startup_timestamp": "13206079254962915",
       "last_startup_version": "75.0.3770.100",
-      "same_version_startup_count": 11
+      "same_version_startup_count": 15
    },
    "subresource_filter": {
       "ruleset_version": {
@@ -485,18 +482,18 @@
       }
    },
    "tab_stats": {
-      "last_daily_sample": "13205472087263270",
+      "last_daily_sample": "13206078754911212",
       "max_tabs_per_window": 1,
-      "total_tab_count_max": 2,
-      "window_count_max": 2
+      "total_tab_count_max": 1,
+      "window_count_max": 1
    },
    "ukm": {
       "persisted_logs": [  ]
    },
    "uninstall_metrics": {
       "installation_date2": "1559749160",
-      "launch_count": "71",
-      "page_load_count": "272"
+      "launch_count": "75",
+      "page_load_count": "288"
    },
    "updateclientdata": {
       "apps": {
@@ -597,30 +594,30 @@
       "client_id_timestamp": "1559635038",
       "low_entropy_source3": 709,
       "machine_id": 4809022,
-      "session_id": 70,
+      "session_id": 74,
       "stability": {
          "breakpad_registration_fail": 0,
          "breakpad_registration_ok": 0,
-         "browser_last_live_timestamp": "13205475341297614",
+         "browser_last_live_timestamp": "13206079255918342",
          "child_process_crash_count": 0,
-         "crash_count": 0,
-         "debugger_not_present": 11,
+         "crash_count": 2,
+         "debugger_not_present": 15,
          "debugger_present": 0,
          "deferred_count": 0,
          "discard_count": 3,
-         "exited_cleanly": true,
+         "exited_cleanly": false,
          "extension_renderer_crash_count": 0,
          "extension_renderer_failed_launch_count": 0,
-         "extension_renderer_launch_count": 11,
+         "extension_renderer_launch_count": 15,
          "gpu_crash_count": 0,
          "incomplete_session_end_count": 0,
-         "launch_count": 11,
-         "page_load_count": 34,
+         "launch_count": 15,
+         "page_load_count": 50,
          "plugin_stats2": [  ],
          "renderer_crash_count": 0,
          "renderer_failed_launch_count": 0,
          "renderer_hang_count": 0,
-         "renderer_launch_count": 57,
+         "renderer_launch_count": 78,
          "session_end_completed": true,
          "stats_buildtime": "1560747600",
          "stats_version": "75.0.3770.100-64",
@@ -628,16 +625,16 @@
          "version_mismatch_count": 0
       }
    },
+   "variations_crash_streak": 2,
    "was": {
       "restarted": false
    }
 }
-[1561517344.279][INFO]: Cannot switch to US keyboard layout - some keys may be interpreted incorrectly
-[1561517344.280][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-infobars --disable-notifications --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension="C:\Users\DELL\AppData\Local\Temp\scoped_dir7384_5490\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --start-maximized --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\DELL\AppData\Local\Google\Chrome\User Data\Profile 2"
-[1561517346.389][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
-[1561517346.514][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
-[1561517346.552][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[1561517347.742][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] RESPONSE InitSession {
+[1561606002.162][INFO]: Cannot switch to US keyboard layout - some keys may be interpreted incorrectly
+[1561606002.162][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-infobars --disable-notifications --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension="C:\Users\DELL\AppData\Local\Temp\scoped_dir4428_11824\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --start-maximized --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\DELL\AppData\Local\Google\Chrome\User Data\Profile 2"
+[1561606003.348][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+[1561606003.395][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1561606004.649][INFO]: [de42d61c923a94db485ace59e9758902] RESPONSE InitSession {
    "acceptInsecureCerts": false,
    "acceptSslCerts": false,
    "applicationCacheEnabled": false,
@@ -650,7 +647,7 @@
    "cssSelectorsEnabled": true,
    "databaseEnabled": false,
    "goog:chromeOptions": {
-      "debuggerAddress": "localhost:60558"
+      "debuggerAddress": "localhost:62680"
    },
    "handlesAlerts": true,
    "hasTouchScreen": false,
@@ -666,70 +663,15 @@
    },
    "~~~": "..."
 }
-[1561517347.814][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] COMMAND Navigate {
+[1561606004.668][INFO]: [de42d61c923a94db485ace59e9758902] COMMAND Navigate {
    "url": "https://www.amazon.in"
 }
-[1561517347.815][INFO]: Waiting for pending navigations...
-[1561517347.852][INFO]: Done waiting for pending navigations. Status: ok
-[1561517348.267][INFO]: Waiting for pending navigations...
-[1561517352.354][INFO]: Done waiting for pending navigations. Status: ok
-[1561517352.354][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] RESPONSE Navigate
-[1561517352.370][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] COMMAND FindElement {
-   "using": "id",
-   "value": "searchDropdownBox"
+[1561606004.668][INFO]: Waiting for pending navigations...
+[1561606004.677][INFO]: Done waiting for pending navigations. Status: ok
+[1561606005.787][INFO]: Waiting for pending navigations...
+[1561606008.790][INFO]: Done waiting for pending navigations. Status: ok
+[1561606008.790][INFO]: [de42d61c923a94db485ace59e9758902] RESPONSE Navigate
+[1561606008.806][INFO]: [de42d61c923a94db485ace59e9758902] COMMAND Quit {
+
 }
-[1561517352.370][INFO]: Waiting for pending navigations...
-[1561517352.443][INFO]: Done waiting for pending navigations. Status: ok
-[1561517352.494][INFO]: Waiting for pending navigations...
-[1561517352.497][INFO]: Done waiting for pending navigations. Status: ok
-[1561517352.497][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] RESPONSE FindElement {
-   "ELEMENT": "0.9718199965906953-1"
-}
-[1561517352.521][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] COMMAND TypeElement {
-   "id": "0.9718199965906953-1",
-   "value": [ "Books" ]
-}
-[1561517352.521][INFO]: Waiting for pending navigations...
-[1561517352.523][INFO]: Done waiting for pending navigations. Status: ok
-[1561517353.105][INFO]: Waiting for pending navigations...
-[1561517353.109][INFO]: Done waiting for pending navigations. Status: ok
-[1561517353.109][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] RESPONSE TypeElement
-[1561517353.114][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] COMMAND FindElement {
-   "using": "id",
-   "value": "twotabsearchtextbox"
-}
-[1561517353.114][INFO]: Waiting for pending navigations...
-[1561517353.117][INFO]: Done waiting for pending navigations. Status: ok
-[1561517353.139][INFO]: Waiting for pending navigations...
-[1561517353.144][INFO]: Done waiting for pending navigations. Status: ok
-[1561517353.144][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] RESPONSE FindElement {
-   "ELEMENT": "0.9718199965906953-2"
-}
-[1561517353.151][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] COMMAND TypeElement {
-   "id": "0.9718199965906953-2",
-   "value": [ "harry potter" ]
-}
-[1561517353.151][INFO]: Waiting for pending navigations...
-[1561517353.152][INFO]: Done waiting for pending navigations. Status: ok
-[1561517353.413][INFO]: Waiting for pending navigations...
-[1561517353.415][INFO]: Done waiting for pending navigations. Status: ok
-[1561517353.415][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] RESPONSE TypeElement
-[1561517353.421][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']"
-}
-[1561517353.421][INFO]: Waiting for pending navigations...
-[1561517353.422][INFO]: Done waiting for pending navigations. Status: ok
-[1561517353.453][INFO]: Waiting for pending navigations...
-[1561517353.454][INFO]: Done waiting for pending navigations. Status: ok
-[1561517353.454][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] RESPONSE FindElement {
-   "ELEMENT": "0.9718199965906953-3"
-}
-[1561517353.470][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] COMMAND ClickElement {
-   "id": "0.9718199965906953-3"
-}
-[1561517353.470][INFO]: Waiting for pending navigations...
-[1561517353.474][INFO]: Done waiting for pending navigations. Status: ok
-[1561517353.753][INFO]: Waiting for pending navigations...
-[1561517356.563][INFO]: Done waiting for pending navigations. Status: ok
-[1561517356.563][INFO]: [c6850eb83636152a74fe00ab8e9a11c1] RESPONSE ClickElement
+[1561606008.879][INFO]: [de42d61c923a94db485ace59e9758902] RESPONSE Quit

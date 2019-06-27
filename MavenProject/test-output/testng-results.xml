@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="18040" started-at="2019-06-27T03:26:31Z" finished-at="2019-06-27T03:26:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18040" started-at="2019-06-27T03:26:31Z" finished-at="2019-06-27T03:26:49Z">
+      <class name="com.project.MavenProject.TC_005">
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.project.MavenProject.TC_005@4abdb505]" name="startProcess" is-config="true" duration-ms="8685" started-at="2019-06-27T03:26:31Z" finished-at="2019-06-27T03:26:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="zomatoo()[pri:1, instance:com.project.MavenProject.TC_005@4abdb505]" name="zomatoo" duration-ms="8" started-at="2019-06-27T03:26:40Z" finished-at="2019-06-27T03:26:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zomatoo -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.MavenProject.TC_005@4abdb505]" name="endProcess" is-config="true" duration-ms="1326" started-at="2019-06-27T03:26:40Z" finished-at="2019-06-27T03:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.project.MavenProject.TC_005@4abdb505]" name="startProcess" is-config="true" duration-ms="7239" started-at="2019-06-27T03:26:41Z" finished-at="2019-06-27T03:26:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="flipkart()[pri:3, instance:com.project.MavenProject.TC_005@4abdb505]" name="flipkart" duration-ms="1" started-at="2019-06-27T03:26:48Z" finished-at="2019-06-27T03:26:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flipkart -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.MavenProject.TC_005@4abdb505]" name="endProcess" is-config="true" duration-ms="738" started-at="2019-06-27T03:26:48Z" finished-at="2019-06-27T03:26:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+      </class> <!-- com.project.MavenProject.TC_005 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

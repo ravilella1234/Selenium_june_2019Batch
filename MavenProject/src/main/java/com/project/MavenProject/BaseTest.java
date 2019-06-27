@@ -257,5 +257,10 @@ public class BaseTest
 	}
 
 	
+	public static void closeBrowser()
+	{
+		driver.quit();
+	}
+	
 	
 }
