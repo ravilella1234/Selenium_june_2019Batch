@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite]">
+  <test thread-count="5" name="RegressionTest(failed)">
+    <classes>
+      <class name="com.project.MavenProject.RadioButton1">
+        <methods>
+          <include name="RadioButtonTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.project.MavenProject.RadioButton1 -->
+      <class name="com.project.MavenProject.CheckBox1">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="checkboxTest"/>
+        </methods>
+      </class> <!-- com.project.MavenProject.CheckBox1 -->
+      <class name="com.project.MavenProject.TC_005">
+        <methods>
+          <include name="amazon"/>
+          <include name="startProcess"/>
+          <include name="endProcess"/>
+        </methods>
+      </class> <!-- com.project.MavenProject.TC_005 -->
+      <class name="com.project.MavenProject.LinksTesting1">
+        <methods>
+          <include name="linktesting1"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.project.MavenProject.LinksTesting1 -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

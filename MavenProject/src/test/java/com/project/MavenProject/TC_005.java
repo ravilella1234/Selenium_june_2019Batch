@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterMethod;
 
 public class TC_005 extends BaseTest
@@ -12,22 +13,23 @@ public class TC_005 extends BaseTest
 	
 
   @BeforeMethod
-  public void startProcess() throws Exception 
+  @Parameters("browser")
+  public void startProcess(String browserType) throws Exception 
   {
-	  test=report.startTest("TC_004");
+	  test=report.startTest("TC_005");
 	  
 	  loadData();
 	  test.log(LogStatus.INFO, "loading the cofig files....");
 		
-	  launch("chromebrowser");
-	  test.log(LogStatus.INFO, "Opened the Browser :- " +p.getProperty("chromebrowser"));
+	  launch(browserType);
+	  test.log(LogStatus.INFO, "Opened the Browser :- " +p.getProperty("firefoxbrowser"));
 		
 	  navigateUrl("amazonurl");
 	  test.log(LogStatus.INFO, "Navigated to site :- " + p.getProperty("amazonurl"));
   }
   
 
-  @Test(priority=2,enabled=false)
+  @Test(priority=1)
   public void amazon()
   {
 	    selectItem("amazonsearchdropdown_id","amazonvalue");
@@ -38,19 +40,6 @@ public class TC_005 extends BaseTest
 		
 		click("amazonsearchbutton_xpath");
 		test.log(LogStatus.INFO, "Clicked on Amozon search Button by using the locator :- " + or.getProperty("amazonsearchbutton_xpath"));
-  }
-  
-  @Test(priority=1)
-  public void zomatoo()
-  {
-	  System.out.println("iam Zomatoo test....");
-  }
-  
- 
-  @Test(priority=3)
-  public void flipkart()
-  {
-	  System.out.println("iam flipkart test....");
   }
   
 

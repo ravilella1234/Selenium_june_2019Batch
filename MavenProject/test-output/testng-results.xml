@@ -1,37 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
+    <line>
+      <![CDATA[Clicked on Image Link]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Image Link]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18040" started-at="2019-06-27T03:26:31Z" finished-at="2019-06-27T03:26:49Z">
+  <suite name="RegressionSuite" duration-ms="151888" started-at="2019-07-01T03:39:19Z" finished-at="2019-07-01T03:41:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18040" started-at="2019-06-27T03:26:31Z" finished-at="2019-06-27T03:26:49Z">
+    <test name="ChromeTest" duration-ms="38743" started-at="2019-07-01T03:39:19Z" finished-at="2019-07-01T03:39:58Z">
+      <class name="com.project.MavenProject.LinksTesting1">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.project.MavenProject.LinksTesting1@5bfbf16f]" name="setup" is-config="true" duration-ms="3697" started-at="2019-07-01T03:39:41Z" finished-at="2019-07-01T03:39:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="linktesting1()[pri:0, instance:com.project.MavenProject.LinksTesting1@5bfbf16f]" name="linktesting1" duration-ms="1388" started-at="2019-07-01T03:39:45Z" finished-at="2019-07-01T03:39:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Image Link]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- linktesting1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.MavenProject.LinksTesting1@5bfbf16f]" name="tearDown" is-config="true" duration-ms="630" started-at="2019-07-01T03:39:46Z" finished-at="2019-07-01T03:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.MavenProject.LinksTesting1 -->
+      <class name="com.project.MavenProject.CheckBox1">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.MavenProject.CheckBox1@59906517]" name="beforeMethod" is-config="true" duration-ms="6626" started-at="2019-07-01T03:39:33Z" finished-at="2019-07-01T03:39:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:com.project.MavenProject.CheckBox1@59906517]" name="checkboxTest" duration-ms="349" started-at="2019-07-01T03:39:40Z" finished-at="2019-07-01T03:39:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkboxTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.MavenProject.CheckBox1@59906517]" name="afterMethod" is-config="true" duration-ms="694" started-at="2019-07-01T03:39:40Z" finished-at="2019-07-01T03:39:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.project.MavenProject.CheckBox1 -->
       <class name="com.project.MavenProject.TC_005">
-        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.project.MavenProject.TC_005@4abdb505]" name="startProcess" is-config="true" duration-ms="8685" started-at="2019-06-27T03:26:31Z" finished-at="2019-06-27T03:26:40Z">
+        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.project.MavenProject.TC_005@cb51256]" name="startProcess" is-config="true" duration-ms="6405" started-at="2019-07-01T03:39:47Z" finished-at="2019-07-01T03:39:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="zomatoo()[pri:1, instance:com.project.MavenProject.TC_005@4abdb505]" name="zomatoo" duration-ms="8" started-at="2019-06-27T03:26:40Z" finished-at="2019-06-27T03:26:40Z">
+        <test-method status="PASS" signature="amazon()[pri:1, instance:com.project.MavenProject.TC_005@cb51256]" name="amazon" duration-ms="3713" started-at="2019-07-01T03:39:53Z" finished-at="2019-07-01T03:39:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- zomatoo -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.MavenProject.TC_005@4abdb505]" name="endProcess" is-config="true" duration-ms="1326" started-at="2019-06-27T03:26:40Z" finished-at="2019-06-27T03:26:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endProcess -->
-        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.project.MavenProject.TC_005@4abdb505]" name="startProcess" is-config="true" duration-ms="7239" started-at="2019-06-27T03:26:41Z" finished-at="2019-06-27T03:26:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="flipkart()[pri:3, instance:com.project.MavenProject.TC_005@4abdb505]" name="flipkart" duration-ms="1" started-at="2019-06-27T03:26:48Z" finished-at="2019-06-27T03:26:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flipkart -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.MavenProject.TC_005@4abdb505]" name="endProcess" is-config="true" duration-ms="738" started-at="2019-06-27T03:26:48Z" finished-at="2019-06-27T03:26:49Z">
+        </test-method> <!-- amazon -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.MavenProject.TC_005@cb51256]" name="endProcess" is-config="true" duration-ms="1182" started-at="2019-07-01T03:39:57Z" finished-at="2019-07-01T03:39:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endProcess -->
       </class> <!-- com.project.MavenProject.TC_005 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.project.MavenProject.RadioButton1">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.MavenProject.RadioButton1@6043cd28]" name="beforeMethod" is-config="true" duration-ms="13030" started-at="2019-07-01T03:39:19Z" finished-at="2019-07-01T03:39:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="RadioButtonTest()[pri:0, instance:com.project.MavenProject.RadioButton1@6043cd28]" name="RadioButtonTest" duration-ms="336" started-at="2019-07-01T03:39:32Z" finished-at="2019-07-01T03:39:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RadioButtonTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.MavenProject.RadioButton1@6043cd28]" name="afterMethod" is-config="true" duration-ms="643" started-at="2019-07-01T03:39:33Z" finished-at="2019-07-01T03:39:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.project.MavenProject.RadioButton1 -->
+    </test> <!-- ChromeTest -->
+    <test name="FirefoxTest" duration-ms="113093" started-at="2019-07-01T03:39:58Z" finished-at="2019-07-01T03:41:51Z">
+      <class name="com.project.MavenProject.LinksTesting1">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.project.MavenProject.LinksTesting1@66d1af89]" name="setup" is-config="true" duration-ms="21107" started-at="2019-07-01T03:40:52Z" finished-at="2019-07-01T03:41:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="linktesting1()[pri:0, instance:com.project.MavenProject.LinksTesting1@66d1af89]" name="linktesting1" duration-ms="1576" started-at="2019-07-01T03:41:13Z" finished-at="2019-07-01T03:41:14Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Image Link]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- linktesting1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.MavenProject.LinksTesting1@66d1af89]" name="tearDown" is-config="true" duration-ms="3699" started-at="2019-07-01T03:41:14Z" finished-at="2019-07-01T03:41:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.MavenProject.LinksTesting1 -->
+      <class name="com.project.MavenProject.CheckBox1">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.MavenProject.CheckBox1@4a87761d]" name="beforeMethod" is-config="true" duration-ms="22844" started-at="2019-07-01T03:40:27Z" finished-at="2019-07-01T03:40:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:com.project.MavenProject.CheckBox1@4a87761d]" name="checkboxTest" duration-ms="277" started-at="2019-07-01T03:40:49Z" finished-at="2019-07-01T03:40:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkboxTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.MavenProject.CheckBox1@4a87761d]" name="afterMethod" is-config="true" duration-ms="2132" started-at="2019-07-01T03:40:50Z" finished-at="2019-07-01T03:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.project.MavenProject.CheckBox1 -->
+      <class name="com.project.MavenProject.TC_005">
+        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.project.MavenProject.TC_005@757942a1]" name="startProcess" is-config="true" duration-ms="22556" started-at="2019-07-01T03:41:18Z" finished-at="2019-07-01T03:41:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="amazon()[pri:1, instance:com.project.MavenProject.TC_005@757942a1]" name="amazon" duration-ms="7015" started-at="2019-07-01T03:41:41Z" finished-at="2019-07-01T03:41:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazon -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.MavenProject.TC_005@757942a1]" name="endProcess" is-config="true" duration-ms="3317" started-at="2019-07-01T03:41:48Z" finished-at="2019-07-01T03:41:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+      </class> <!-- com.project.MavenProject.TC_005 -->
+      <class name="com.project.MavenProject.RadioButton1">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.MavenProject.RadioButton1@69b0fd6f]" name="beforeMethod" is-config="true" duration-ms="25965" started-at="2019-07-01T03:39:58Z" finished-at="2019-07-01T03:40:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="RadioButtonTest()[pri:0, instance:com.project.MavenProject.RadioButton1@69b0fd6f]" name="RadioButtonTest" duration-ms="274" started-at="2019-07-01T03:40:24Z" finished-at="2019-07-01T03:40:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RadioButtonTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.MavenProject.RadioButton1@69b0fd6f]" name="afterMethod" is-config="true" duration-ms="2315" started-at="2019-07-01T03:40:24Z" finished-at="2019-07-01T03:40:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.project.MavenProject.RadioButton1 -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- RegressionSuite -->
 </testng-results>

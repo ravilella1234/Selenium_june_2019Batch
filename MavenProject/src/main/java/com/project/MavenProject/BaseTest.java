@@ -65,7 +65,7 @@ public class BaseTest
 	
 	public static void launch(String browser)
 	{
-		if(p.getProperty(browser).equalsIgnoreCase("CHROME"))
+		if(browser.equalsIgnoreCase("CHROME"))
 		{
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\Drivers\\chromedriver.exe");
 			
@@ -90,9 +90,9 @@ public class BaseTest
 			
 			driver=new ChromeDriver(option);
 		}
-		else if(p.getProperty(browser).equalsIgnoreCase("firefox")) 
+		else if(browser.equalsIgnoreCase("firefox")) 
 		{
-			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "d://abcd.txt");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "null");
 			
 			
 			FirefoxOptions option=new FirefoxOptions();
@@ -100,16 +100,16 @@ public class BaseTest
 			
 			
 			ProfilesIni p=new ProfilesIni();
-			FirefoxProfile profile = p.getProfile("morningprofile1");
+			FirefoxProfile profile = p.getProfile("sai");
 			
 			
 			//notifications
 			profile.setPreference("dom.webnotifications.enabled", false);
 			
 			//proxy servers
-			profile.setPreference("network.proxy.type", 1);
+			/*profile.setPreference("network.proxy.type", 1);
 			profile.setPreference("network.proxy.socks", "192.168.90.54");
-			profile.setPreference("network.proxy.socks_port", 1744);
+			profile.setPreference("network.proxy.socks_port", 1744);*/
 			
 			option.setProfile(profile);
 			
@@ -117,7 +117,7 @@ public class BaseTest
 			driver=new FirefoxDriver(option);
 			
 		}
-		else if(p.getProperty(browser).equalsIgnoreCase("ie")) 
+		else if(browser.equalsIgnoreCase("ie")) 
 		{
 			//logs
 			System.setProperty(InternetExplorerDriverService.IE_DRIVER_LOGFILE_PROPERTY, "D:\\IE.log");
@@ -137,7 +137,7 @@ public class BaseTest
 			
 			driver=new InternetExplorerDriver(option);
 		}
-		else if(p.getProperty(browser).equalsIgnoreCase("edge")) 
+		else if(browser.equalsIgnoreCase("edge")) 
 		{
 			//logs
 			System.setProperty(EdgeDriverService.EDGE_DRIVER_EXE_PROPERTY, "null");
