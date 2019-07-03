@@ -12,7 +12,7 @@ public class TC_005 extends BaseTest
 {
 	
 
-  @BeforeMethod
+  @BeforeMethod(groups= {"regression"})
   @Parameters("browser")
   public void startProcess(String browserType) throws Exception 
   {
@@ -29,7 +29,7 @@ public class TC_005 extends BaseTest
   }
   
 
-  @Test(priority=1)
+  @Test(priority=1,groups= {"regression"})
   public void amazon()
   {
 	    selectItem("amazonsearchdropdown_id","amazonvalue");
@@ -43,7 +43,7 @@ public class TC_005 extends BaseTest
   }
   
 
-  @AfterMethod
+  @AfterMethod(groups= {"regression"})
   public void endProcess() 
   {
 	 closeBrowser();

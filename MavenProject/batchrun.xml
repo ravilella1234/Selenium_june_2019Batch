@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="RegressionSuite">
+<suite name="RegressionSuite" parallel="tests">
 
   <test thread-count="5" name="ChromeTest">
   <parameter name="browser" value="chrome"></parameter>
@@ -14,7 +14,7 @@
   
   
   <test thread-count="5" name="FirefoxTest">
-  <parameter name="browser" value="firefox"></parameter>
+  <parameter name="browser" value="ie"></parameter>
     <classes>
       <class name="com.project.MavenProject.RadioButton1"/>
       <class name="com.project.MavenProject.TC_005"/>
