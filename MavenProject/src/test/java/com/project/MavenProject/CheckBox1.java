@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.project.MavenProject.BaseTest;
+
 public class CheckBox1 extends BaseTest 
 {
   
@@ -16,6 +18,7 @@ public class CheckBox1 extends BaseTest
 	@Parameters("browser")
 	  public void beforeMethod(String browserType) throws Exception 
 	  {
+			System.out.println("beforemethod -  CheckBox1");
 			loadData();
 			launch(browserType);
 			navigateUrl("checkboxurl");
@@ -38,6 +41,7 @@ public class CheckBox1 extends BaseTest
   public void afterMethod() 
   {
 	 closeBrowser();
+	 System.out.println("aftermethod -  CheckBox1");
   }
 
 }

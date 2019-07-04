@@ -8,6 +8,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.project.MavenProject.BaseTest;
+
 public class LinksTesting1 extends BaseTest 
 {
 
@@ -16,6 +18,7 @@ public class LinksTesting1 extends BaseTest
 	@Parameters("browser")
 	public void setup(String browserType) throws Exception
 	{
+		System.out.println("beforemethod -  LinksTesting1");
 		loadData();
 		launch(browserType);
 		navigateUrl("linktexturl");
@@ -40,6 +43,7 @@ public class LinksTesting1 extends BaseTest
 	public void tearDown()
 	{
 		closeBrowser();
+		System.out.println("aftermethod -  LinksTesting1");
 	}
 
 }

@@ -2,6 +2,7 @@ package com.project.MavenProject;
 
 import org.testng.annotations.Test;
 
+import com.project.MavenProject.BaseTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import org.testng.annotations.BeforeMethod;
