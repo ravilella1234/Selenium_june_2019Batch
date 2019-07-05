@@ -43,6 +43,14 @@ public class BaseTest
 	public static String logpath=projectPath+"//log4j.properties";
 	public static Properties p;
 	public static Properties or;
+	public static String screenshotFileName=null;
+	
+	
+	static
+	{
+		Date dt=new Date();
+		screenshotFileName = dt.toString().replace(":", "_").replace(" ", "_")+".png";
+	}
 	
 	
 	public static ExtentReports report=ExtentManager.getInstance();

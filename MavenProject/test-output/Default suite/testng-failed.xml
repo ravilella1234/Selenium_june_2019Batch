@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project.MavenProject.TC_005">
+      <class name="com.project.MavenProject.DependencyTest2">
         <methods>
-          <include name="amazon"/>
-          <include name="startProcess"/>
-          <include name="endProcess"/>
+          <include name="blue"/>
         </methods>
-      </class> <!-- com.project.MavenProject.TC_005 -->
+      </class> <!-- com.project.MavenProject.DependencyTest2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
