@@ -1,128 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[Test started Running:amazon]]>
-    </line>
-    <line>
-      <![CDATA[<a href='C:\Users\DELL\git\Selenium_june_2019Batch1\MavenProject//failure//Fri_Jul_05_09_06_15_IST_2019.png'> <img src='C:\Users\DELL\git\Selenium_june_2019Batch1\MavenProject//failure//Fri_Jul_05_09_06_15_IST_2019.png' height='100' width='100'/> </a>]]>
-    </line>
-    <line>
-      <![CDATA[Test has Failed:amazon]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="10829" started-at="2019-07-05T03:36:16Z" finished-at="2019-07-05T03:36:27Z">
+  <suite name="Default suite" duration-ms="15512" started-at="2019-07-10T03:33:26Z" finished-at="2019-07-10T03:33:42Z">
     <groups>
-      <group name="regression">
-        <method signature="TC_005.amazon()[pri:1, instance:com.project.MavenProject.TC_005@45820e51]" name="amazon" class="com.project.MavenProject.TC_005"/>
-      </group> <!-- regression -->
     </groups>
-    <test name="Test" duration-ms="10829" started-at="2019-07-05T03:36:16Z" finished-at="2019-07-05T03:36:27Z">
-      <class name="com.project.MavenProject.TC_005">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.project.MavenProject.TC_005@45820e51]" name="startProcess" is-config="true" duration-ms="8068" started-at="2019-07-05T03:36:16Z" finished-at="2019-07-05T03:36:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="15512" started-at="2019-07-10T03:33:26Z" finished-at="2019-07-10T03:33:42Z">
+      <class name="com.project.MavenProject.pageobjectModel.TC_007">
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.project.MavenProject.pageobjectModel.TC_007@7ce6a65d]" name="startProcess" is-config="true" duration-ms="6578" started-at="2019-07-10T03:33:26Z" finished-at="2019-07-10T03:33:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startProcess -->
-        <test-method status="FAIL" signature="amazon()[pri:1, instance:com.project.MavenProject.TC_005@45820e51]" name="amazon" duration-ms="816" started-at="2019-07-05T03:36:24Z" finished-at="2019-07-05T03:36:25Z">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //div[@class='nav-search-submit nav-sprite']//input[@class='nav-input' because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='nav-search-submit nav-sprite']//input[@class='nav-input'' is not a valid XPath expression.
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'DESKTOP-AA4AD8I', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60744}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: f82a036c9d646eaaeef8c2e7abe05ba7
-*** Element info: {Using=xpath, value=//div[@class='nav-search-submit nav-sprite']//input[@class='nav-input'}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //div[@class='nav-search-submit nav-sprite']//input[@class='nav-input' because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='nav-search-submit nav-sprite']//input[@class='nav-input'' is not a valid XPath expression.
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'DESKTOP-AA4AD8I', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60744}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: f82a036c9d646eaaeef8c2e7abe05ba7
-*** Element info: {Using=xpath, value=//div[@class='nav-search-submit nav-sprite']//input[@class='nav-input'}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-at com.project.MavenProject.BaseTest.getElement(BaseTest.java:197)
-at com.project.MavenProject.BaseTest.click(BaseTest.java:181)
-at com.project.MavenProject.TC_005.amazon(TC_005.java:42)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Test started Running:amazon]]>
-            </line>
-            <line>
-              <![CDATA[<a href='C:\Users\DELL\git\Selenium_june_2019Batch1\MavenProject//failure//Fri_Jul_05_09_06_15_IST_2019.png'> <img src='C:\Users\DELL\git\Selenium_june_2019Batch1\MavenProject//failure//Fri_Jul_05_09_06_15_IST_2019.png' height='100' width='100'/> </a>]]>
-            </line>
-            <line>
-              <![CDATA[Test has Failed:amazon]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.MavenProject.TC_005@45820e51]" name="endProcess" is-config="true" duration-ms="1152" started-at="2019-07-05T03:36:26Z" finished-at="2019-07-05T03:36:27Z">
+        <test-method status="PASS" signature="registration()[pri:0, instance:com.project.MavenProject.pageobjectModel.TC_007@7ce6a65d]" name="registration" duration-ms="8893" started-at="2019-07-10T03:33:33Z" finished-at="2019-07-10T03:33:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- com.project.MavenProject.TC_005 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- registration -->
+      </class> <!-- com.project.MavenProject.pageobjectModel.TC_007 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

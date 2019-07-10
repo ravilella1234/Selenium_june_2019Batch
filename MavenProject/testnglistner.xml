@@ -3,7 +3,8 @@
 <suite name="Suite">
 
 	<listeners>
-		<listener class-name="com.project.MavenProject.listners.Listener"></listener> 
+		<listener class-name="com.project.MavenProject.listners.Listener"></listener>
+		<listener class-name="com.project.MavenProject.listners.RetryListener"></listener>  
 	</listeners>
 
   <test thread-count="5" name="Test">
