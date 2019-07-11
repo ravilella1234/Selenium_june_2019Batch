@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Properties;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -29,6 +31,8 @@ import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -158,6 +162,8 @@ public class BaseTest
 	public static void navigateUrl(String url)
 	{
 		driver.get(p.getProperty(url));
+		//implicit Wait
+		//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
 	
 	
@@ -268,6 +274,28 @@ public class BaseTest
 	public static void closeBrowser()
 	{
 		driver.quit();
+	}
+	
+	
+	public int randomNumber() 
+	{
+		Random r=new Random();
+		int ranNum = r.nextInt(99999);
+		return ranNum;
+	}
+	
+	public void waitForElement(WebElement locator,int timeInSeconds,String operationType)
+	{
+		
+		WebDriverWait wait=new WebDriverWait(driver, timeInSeconds);
+		
+		if(operationType.equals("elementToClick")){
+			wait.until(ExpectedConditions.elementToBeClickable(locator));
+		}else if(operationType.equals("elementToVisible")) {
+			wait.until(ExpectedConditions.visibilityOf(locator));
+		}
+		
+		
 	}
 	
 	

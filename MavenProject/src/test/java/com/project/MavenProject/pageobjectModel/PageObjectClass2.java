@@ -4,8 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class PageObjectClass2
+import com.project.MavenProject.BaseTest;
+
+public class PageObjectClass2 extends BaseTest
 {
 	@FindBy(linkText="Sign in")WebElement signIn;
 	@FindBy(id="email_create")WebElement customerEmail;
@@ -33,14 +38,21 @@ public class PageObjectClass2
 	public void customerRegistration() throws InterruptedException
 	{
 		signIn.click();
-		customerEmail.sendKeys("qatest876596@gmail.com");
+		//customerEmail.sendKeys("qatest876596@gmail.com");
+		customerEmail.sendKeys(p.getProperty("firstname")+p.getProperty("lastname")+randomNumber()+p.getProperty("domain"));
+		System.out.println(customerEmail.getAttribute("value"));
+		
 		submitCreate.click();
-		Thread.sleep(3000);
+		
+		//Thread.sleep(3000);
+		waitForElement(mr, 60, "elementToClick");
 		mr.click();
-		firstName.sendKeys("qa");
-		lastName.sendKeys("test");
-		password.sendKeys("test1234");
-		day.sendKeys("15");
+				
+		firstName.sendKeys(p.getProperty("firstname"));
+		lastName.sendKeys(p.getProperty("lastname"));
+		password.sendKeys(p.getProperty("password"));
+		
+		day.sendKeys("15");	
 		month.sendKeys("April");
 		year.sendKeys("2002");
 		address.sendKeys("hyderabad");
@@ -51,6 +63,8 @@ public class PageObjectClass2
 		phone.sendKeys("1234567898");
 		
 	}
+
+	
 	
 	
 }
