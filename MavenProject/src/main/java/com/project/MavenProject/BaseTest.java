@@ -223,8 +223,7 @@ public class BaseTest
 		if(actualTitle.equals(or.getProperty(expectedTitle)))
 			return true;
 		else
-			return false;
-			
+			return false;	
 	}
 	
 	
@@ -236,7 +235,6 @@ public class BaseTest
 			return true;
 		else
 			return false;
-		
 	}
 	
 	
