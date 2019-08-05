@@ -1,4 +1,4 @@
-package exceldataAPIS;
+package com.project.MavenProject.exceldata;
 
 import org.testng.annotations.Test;
 
@@ -16,9 +16,12 @@ public class TC_003
   @Test(dataProvider = "dp")
   public void f(Hashtable<String, String> data) 
   {
+	  
+	//System.out.println(data.get("RunMode")+"-------"+data.get("col1")+"-----"+data.get("col2")+"-----"+data.get("col3")+"-----");
+	  
 	 if(data.get("RunMode").equals("y"))
-		//System.out.println(data.get("RunMode")+"-------"+data.get("col1")+"-----"+data.get("col2")+"-----"+data.get("col3")+"-----"+data.get("col4"));
-		System.setProperty("webdriver.chrome.driver", "D:\\Browser_Drivers\\chromedriver.exe");
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\Drivers\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com");
@@ -34,7 +37,7 @@ public class TC_003
 	  
 	  ExcelAPI e=new ExcelAPI("C:\\Users\\DELL\\Desktop\\ravi.xlsx");
 		String sheetName="data";
-		String testCaseName="TestB";
+		String testCaseName="TestC";
 		
 		int testStartRowNum=0;
 		while(!e.getCellData(sheetName, 0, testStartRowNum).equals(testCaseName)) 

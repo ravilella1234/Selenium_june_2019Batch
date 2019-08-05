@@ -1,4 +1,4 @@
-package exceldataAPIS;
+package com.project.MavenProject.exceldata;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -7,7 +7,7 @@ public class TestA
 {
 
 	@Test(dataProvider="getData")
-	public void testA(String RunMode,String col1,String col2,String col3,String col4)
+	public void testA(String RunMode,String col1,String col2,String col3)
 	{
 		
 	}
@@ -17,7 +17,7 @@ public class TestA
 		
 		ExcelAPI e=new ExcelAPI("C:\\Users\\DELL\\Desktop\\ravi.xlsx");
 		String sheetName="data";
-		String testCaseName="TestB";
+		String testCaseName="TestA";
 		
 		int testStartRowNum=0;
 		while(!e.getCellData(sheetName, 0, testStartRowNum).equals(testCaseName)) 
